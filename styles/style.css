@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  height: 600px;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+}
+
+.boxWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0 50px 0;
+  height: 300px;
+  width: 100%;
+}
+
+.advNr {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.advText {
+  text-align: center;
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+
+.draw {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 27px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid transparent;
+}
+
+.draw img {
+  transition: 0.2s;
+}
+
+.draw:hover {
+  background-color: hsl(150, 71%, 47%);
+  border: 2px solid black;
+}
+
+.draw:active {
+  transform: scale(0.9);
+}
+
+.draw:active img {
+  transform: rotate(360deg);
+}
+
+.attribution {
+  position: relative;
+  bottom: 0;
+  font-size: 11px;
+  bottom: -120px;
+  color: hsl(193, 38%, 86%);
+}
+.attribution a {
+  color: hsl(150, 41%, 48%);
+}
