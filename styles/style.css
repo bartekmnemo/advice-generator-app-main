@@ -40,6 +40,10 @@ body {
   width: 100%;
 }
 
+.boxWrap img {
+  width: 80%;
+}
+
 .advNr {
   color: hsl(150, 100%, 66%);
   text-transform: uppercase;
@@ -115,5 +119,9 @@ body {
 
   .advTxt {
     font-size: 18px;
+  }
+
+  .draw:focus {
+    border: none;
   }
 }
