@@ -3,8 +3,6 @@ const advNrId = document.getElementById("advNrId");
 const advTxtId = document.getElementById("advTxtId");
 let nrAdvice = "";
 
-var text = document.createTextNode("This just got added");
-
 function getAdvice() {
   fetch("https://api.adviceslip.com/advice")
     .then(function (response) {

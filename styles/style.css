@@ -6,6 +6,14 @@ body {
   font-weight: 800;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .container {
   position: fixed;
   top: 50%;
@@ -121,7 +129,7 @@ body {
     font-size: 18px;
   }
 
-  .draw:focus {
-    border: none;
+  .draw {
+    -webkit-tap-highlight-color: transparent;
   }
 }
