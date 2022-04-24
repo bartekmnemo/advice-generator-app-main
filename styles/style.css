@@ -95,7 +95,7 @@ a {
   transition: 0.2s;
 }
 
-.draw:hover {
+.draw:hover:enabled {
   background-color: hsl(150, 71%, 47%);
   border: 2px solid black;
 }
@@ -110,6 +110,7 @@ a {
 .draw:disabled {
   transform: scale(1);
   background-color: rgb(95, 95, 95);
+  cursor: not-allowed;
 }
 
 .draw:disabled img {
