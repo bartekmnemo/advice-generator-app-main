@@ -85,10 +85,17 @@ a {
   cursor: pointer;
   transition: 0.2s;
   border: 2px solid transparent;
+  animation: clickMe 1s infinite alternate-reverse;
 }
 
-.disabled {
-  background-color: black;
+@keyframes clickMe {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .draw img {
@@ -111,6 +118,7 @@ a {
   transform: scale(1);
   background-color: rgb(95, 95, 95);
   cursor: not-allowed;
+  animation: none;
 }
 
 .draw:disabled img {
