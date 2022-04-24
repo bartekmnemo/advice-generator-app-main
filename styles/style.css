@@ -1,9 +1,11 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   font-weight: 800;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 input,
@@ -131,5 +133,45 @@ a {
 
   .draw {
     -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 740px) {
+  body {
+    background-color: hsl(217, 19%, 24%);
+  }
+  .container {
+    width: 100%;
+  }
+  .box {
+    min-height: 220px;
+    width: 100%;
+  }
+  .boxWrap {
+    min-height: 100px;
+    width: 100%;
+  }
+
+  .advNr {
+    font-size: 12px;
+  }
+  .advTxt {
+    font-size: 18px;
+  }
+
+  .boxWrap img {
+    margin-top: 10px;
+    transform: scale(0.7);
+    width: 100%;
+  }
+
+  .draw {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .attribution {
+    top: 50px;
   }
 }
