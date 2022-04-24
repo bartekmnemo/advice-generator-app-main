@@ -36,7 +36,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 500px;
-  min-height: 300px;
+  min-height: 310px;
   background-color: hsl(217, 19%, 24%);
   border-radius: 10px;
 }
@@ -87,6 +87,10 @@ a {
   border: 2px solid transparent;
 }
 
+.disabled {
+  background-color: black;
+}
+
 .draw img {
   transition: 0.2s;
 }
@@ -99,9 +103,18 @@ a {
 .draw:active {
   transform: scale(0.9);
 }
-
 .draw:active img {
   transform: rotate(360deg);
+}
+
+.draw:disabled {
+  transform: scale(1);
+  background-color: rgb(95, 95, 95);
+}
+
+.draw:disabled img {
+  color: white;
+  transform: rotate(0);
 }
 
 .attribution {
@@ -159,14 +172,15 @@ a {
   }
   .boxWrap {
     min-height: 100px;
+    max-height: 150px;
     width: 80%;
   }
 
   .advNr {
-    font-size: 12px;
+    font-size: 10px;
   }
   .advTxt {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .boxWrap img {
@@ -176,6 +190,7 @@ a {
   }
 
   .draw {
+    bottom: -20px;
     padding: 0;
     width: 40px;
     height: 40px;
