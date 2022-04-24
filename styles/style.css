@@ -153,13 +153,22 @@ a {
 @media only screen and (max-width: 360px) {
   .container {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: hsl(218, 23%, 16%);
   }
   .box {
     width: 100%;
+    min-height: 10vh;
+  }
+  .advNr,
+  .advTxt {
+    padding: 0;
   }
   .draw {
     padding: 0;
+  }
+  .attribution {
+    top: 7vh;
+    font-size: 10px;
   }
 }
 
@@ -198,7 +207,7 @@ a {
   }
 
   .attribution {
-    top: 50px;
+    top: 10vh;
   }
 }
 
@@ -237,6 +246,13 @@ a {
   }
 
   .attribution {
-    top: 50px;
+    font-size: 9px;
+    top: 7vh;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 360px) {
+  .attribution {
+    color: black;
   }
 }

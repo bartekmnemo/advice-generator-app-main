@@ -9,17 +9,23 @@ function wait() {
   btn.disabled = false;
 }
 
-function getAdvice() {
+async function getAdvice() {
   if (!active) {
-    fetch("https://api.adviceslip.com/advice")
+    await fetch("https://api.adviceslip.com/advice", {
+      cache: "no-cache",
+    })
       .then(function (response) {
         if (response.ok) {
-          return response.json();
+          let data = response.json();
+          console.log(data);
+          return data;
         } else {
           return Promise.reject(response);
         }
       })
       .then(function (data) {
+        console.log(data.slip.id);
+        console.log(data.slip.advice);
         advNrId.textContent = data.slip.id;
         advTxtId.textContent = data.slip.advice;
         btn.disabled = true;
