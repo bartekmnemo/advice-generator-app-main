@@ -136,6 +136,56 @@ a {
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .container {
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .box {
+    width: 100%;
+  }
+  .draw {
+    padding: 0;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1080px) {
+  .container {
+    width: 80%;
+  }
+  .box {
+    min-height: 200px;
+    width: 80%;
+  }
+  .boxWrap {
+    min-height: 100px;
+    width: 80%;
+  }
+
+  .advNr {
+    font-size: 12px;
+  }
+  .advTxt {
+    font-size: 18px;
+  }
+
+  .boxWrap img {
+    margin-top: 10px;
+    transform: scale(0.7);
+    width: 100%;
+  }
+
+  .draw {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .attribution {
+    top: 50px;
+  }
+}
+
 @media (orientation: landscape) and (max-width: 740px) {
   body {
     background-color: hsl(217, 19%, 24%);
@@ -144,7 +194,6 @@ a {
     width: 100%;
   }
   .box {
-    min-height: 220px;
     width: 100%;
   }
   .boxWrap {
